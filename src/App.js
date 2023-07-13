@@ -32,6 +32,7 @@ class App extends Component {
   playAudio(id){
     let audio = document.getElementById(id);
     if (audio){
+      audio.currentTime = 0;
       audio.play();
       this.setActiveKey(id);
     }
