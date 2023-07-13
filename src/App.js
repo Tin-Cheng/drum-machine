@@ -31,8 +31,6 @@ class App extends Component {
   
   playAudio(id){
     let audio = document.getElementById(id);
-    //audio.pause()
-    //console.log(audio);
     if (audio){
       audio.play();
       this.setActiveKey(id);
